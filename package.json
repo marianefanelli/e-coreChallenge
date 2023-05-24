@@ -1,0 +1,27 @@
+{
+  "name": "e-corechallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:headless": "cypress run --headless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianefanelli/e-coreChallenge.git"
+  },
+  "keywords": [
+    "test",
+    "cypress"
+  ],
+  "author": "Mariane Fanelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianefanelli/e-coreChallenge/issues"
+  },
+  "homepage": "https://github.com/marianefanelli/e-coreChallenge#readme",
+  "dependencies": {
+    "cypress": "^12.13.0"
+  }
+}

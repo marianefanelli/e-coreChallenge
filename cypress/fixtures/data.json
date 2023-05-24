@@ -1,0 +1,17 @@
+[
+    {
+        "hotelName": "Rendezvous Hotel",
+        "invoiceDate": "14/01/2018",
+        "dueDate": "15/01/2018",
+        "bookingCode": "0875",
+        "customerDetails": "JOHNY SMITHR2, AVENUE DU MAROC123456",
+        "room": "Superior Double",
+        "checkIn": "14/01/2018",
+        "checkOut": "15/01/2018",
+        "totalStayCount": "1",
+        "totalStayAmount": "$150",
+        "depositNow": "USD $20.90",
+        "taxVat": "USD $19",
+        "totalAmount": "USD $209"
+    }
+]

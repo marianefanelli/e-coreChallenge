@@ -1,0 +1,21 @@
+Cypress.Commands.add('login', (username, password) => { 
+    cy.get('input[name="username"]').type(username)
+    cy.get('input[name="password"]').type(password)
+    cy.get('button#btnLogin').click()
+})
+
+Cypress.Commands.add('validateInvoiceDetails', function (data) { 
+    cy.get('h4.mt-5').should('contains.text', data.hotelName)
+    cy.get('body > section > div > ul > li:nth-child(1)').should('contains.text', data.invoiceDate)
+    cy.get('body > section > div > ul > li:nth-child(2)').should('contains.text', data.dueDate)
+    cy.get('tbody tr:nth-child(1)').should('contains.text', data.bookingCode)
+    cy.get('body > section > div > div').should('contains.text', data.customerDetails)
+    cy.get('tbody tr:nth-child(2)').should('contains.text', data.room)
+    cy.get('tbody tr:nth-child(5)').should('contains.text', data.checkIn)
+    cy.get('tbody tr:nth-child(6)').should('contains.text', data.checkOut)
+    cy.get('tbody tr:nth-child(3)').should('contains.text', data.totalStayCount)
+    cy.get('tbody tr:nth-child(4)').should('contains.text', data.totalStayAmount)
+    cy.get('tbody:nth-child(2) tr td').should('contains.text', data.depositNow)
+    cy.get('tbody:nth-child(2) tr td:nth-child(2)').should('contains.text', data.taxVat)
+    cy.get('tbody:nth-child(2) tr td:nth-child(3)').should('contains.text', data.totalAmount)
+})
